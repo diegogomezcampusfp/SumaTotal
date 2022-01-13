@@ -1,0 +1,37 @@
+
+
+package paquete1;
+
+import java.util.Scanner;
+
+public class aCiegas {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		int numero, numero2, total;
+		
+		System.out.println("Dime el número que quieras");
+		
+		numero = entrada.nextInt();
+		//Podemos utilizar  "abreviaciones" como *= para indicar que el número que escribamos se multiplicará por otro que nosotros elegimos.		
+		numero *= 5;
+		
+		System.out.println("Tu número multiplicado por 5 es: "+numero);
+		
+		System.out.println("Ahora vamos a restar al segundo número que escribas un 10, adelante");
+
+		numero2 = entrada.nextInt();
+		
+		numero2 -= 10;
+		
+		System.out.println("Tu número es: "+numero2);
+		//Uilizamos la variable total almacenando la suma de las otras dos variables
+		total = numero+numero2;
+		
+		System.out.println("Correcto, la suma de los dos números es la siguiente: "+total);
+		
+		
+		
+	}
+
+}
